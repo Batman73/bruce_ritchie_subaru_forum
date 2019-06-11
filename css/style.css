@@ -1,0 +1,233 @@
+/****** Base ******/
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    margin: 3em 1em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.red {
+  color: #871719;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/****** Layout ******/
+.wrap {
+    padding: 2rem;
+}
+
+/****** Header ******/
+.header {
+  background-color: #333333;
+  background-image: url('../img/2005_subaru_blue.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+nav {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+   display: block;
+}
+
+nav a {
+  padding: .5rem;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #20b412;
+}
+
+.forum-button {
+  font-size: 1.4rem;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid #FFFFFF;
+  padding: 6px 12px;
+}
+
+.forum-button:hover {
+  border-color: #20b412;
+  background-color: rgb(41, 21, 226);
+}
+
+
+/****** Forum Signup ******/
+
+.signup-label {
+    display: block;
+    margin: 0 0 16px 0;
+}
+
+.signup-input {
+    display: block;
+    width: 100%;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    height: 40px;
+    padding: 8px;
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background-color: rgb(41, 21, 226);
+    border-radius: 23px;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 40px;
+}
+
+.signup-btn:disabled {
+  opacity: .6;
+}
+
+.signup-btn:hover {
+  background-color: #1de772;
+}
+
+.signup {
+  background-color: rgb(41, 21, 226);
+}
+
+.small-txt, .validation-message {
+  font-size: .8rem;
+}
+
+.validation-message {
+  color: #ff0101;
+  display: none;
+  margin: .5rem 0;
+}
+
+/****** My First Subaru section ******/
+
+#my-first-subaru {
+    background: rgb(41, 21, 226);
+    background-image: url(../img/my-first-subaru-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(5, 0, 0);
+ }
+
+#my-first-subaru img {
+  margin: 108px auto;
+  display: block;
+}
+
+.my-first-subaru-car {
+  border-style: ridge;
+}
+/*****Footer******/
+
+footer {
+    background-color: #333333;
+    color: #F2F2F2;
+}
+
+/*****Layout******/
+
+.span_1, .span_2, .span_3 {
+  width: 100%;
+  float: right;
+  padding: 10px 15px;
+}
+
+.row {
+  margin: 0 -5px;
+  display: block;
+}
+
+.row:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*****Media Queries******/
+
+@media(min-width: 992px) {
+
+  .span_1 {
+    width: 50%;
+  }
+
+  .span_2 {
+    width: 30%;
+  }
+
+  .span_3 {
+    width: 70%;
+  }
+
+  nav {
+    margin-top: 5rem;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+
+  .wrap {
+    width: 970px;
+    margin: 0 auto;
+  }
+
+  #privacyandpolicylinks {
+    float: right;
+  }
+
+}
