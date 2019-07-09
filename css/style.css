@@ -10,12 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: Georgia, serif;
-    text-transform: uppercase;
-    margin: 3em 1em;
-}
-
 h1 {
   font-size: 3rem;
 }
@@ -36,8 +30,15 @@ a {
     text-decoration: none;
 }
 
-.red {
+h1, h2 {
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    margin: 3em 1em;
+}
+
+.my-first-name {
   color: #871719;
+  background-color: gold;
 }
 
 .text-right {
@@ -142,12 +143,18 @@ nav a:hover {
   background-color: rgb(41, 21, 226);
 }
 
-.small-txt, .validation-message {
+.small-txt, .email-invalid-message, .email-valid-message {
   font-size: .8rem;
 }
 
-.validation-message {
-  color: #ff0101;
+.email-invalid-message {
+  color: red;
+  display: none;
+  margin: .5rem 0;
+}
+
+.email-valid-message {
+  color: green;
   display: none;
   margin: .5rem 0;
 }
@@ -199,7 +206,7 @@ footer {
 
 /*****Media Queries******/
 
-@media(min-width: 992px) {
+@media(min-width: 768px) {
 
   .span_1 {
     width: 50%;
@@ -226,7 +233,7 @@ footer {
     margin: 0 auto;
   }
 
-  #privacyandpolicylinks {
+  #forumrulesandprivacyguarantee {
     float: right;
   }
 

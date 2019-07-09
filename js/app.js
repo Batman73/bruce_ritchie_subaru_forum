@@ -1,16 +1,20 @@
 $('#email-field').keyup(function(){
-  if(this.value !== '' && !isValidEmailAddress(this.value)) {
-    $('#email-validation-message').show();
+  if(this.value == 'Britchie@gmail.com') {
     $('#email-submit').prop('disabled', true);
-  } else {
-    $('#email-validation-message').hide();
-    $('#email-submit').prop('disabled', false);
+  } else if(this.value !== '' && !isValidEmailAddress(this.value)) {
+      $('#email-invalid-message').show();
+      $('#email-valid-message').hide();  //added this to hide if email is invalid
+      $('#email-submit').prop('disabled', true);
+  } else if (this.value !== '' && this.value !== 'Britchie@gmail.com'){
+      $('#email-invalid-message').hide();
+      $('#email-valid-message').show();  //added this to show if email is valid
+      $('#email-submit').prop('disabled', false);
   }
 });
 
-$('#email-submit').click(function(e){
-  e.preventDefault();
-  alert('Server unavaliable, try again later!');
+$('#email-submit').click(function(event){
+  event.preventDefault();
+  alert('Thank you for signing up!!!');
 });
 
 //Checks if email address is valid.  
